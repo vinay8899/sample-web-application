@@ -1,10 +1,9 @@
-pipeline{
-
-      agent any
-	tools { 
-      	   maven 'MAVEN_HOME' 
-      	   jdk 'JAVA_HOME' 
-    	} 
+pipeline {
+    agent any
+    tools { 
+      maven 'MAVEN_HOME' 
+      jdk 'JAVA_HOME' 
+    } 
         stages{
 
               stage('Quality Gate Status Check'){
