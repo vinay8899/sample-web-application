@@ -15,8 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<build>
+<!-- <build>
   <pluginManagement>
+      <plugins>
+       <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.7.0.1746</version>
+      </plugin>  
+    </plugins>
+  </pluginManagement>
+  </build> -->
+  <build>
       <plugins>
        <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
@@ -41,8 +51,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
         </plugin>  
     </plugins>
-  </pluginManagement>
-  </build>
+  </build> 
 <!--   <build>
     <finalName>WebApp</finalName>
   </build> -->
